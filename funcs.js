@@ -98,7 +98,7 @@ const displayErrors = errors => {
 }
 
 const errorValue = value => {
-   if (typeof value === "string") value = Number(value.replace(',', '.')); // Convert "5,6" to 5.6
+   //if (typeof value === "string") value = Number(value.replace(',', '.')); // Convert "5,6" to 5.6
    return typeof value !== "number" || isNaN(value) || value < 0 || value > 20;
 }
 
