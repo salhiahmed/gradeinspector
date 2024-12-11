@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"
+      integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdn.jsdelivr.net/npm/preline@2.6.0/dist/preline.min.js"></script>
+   <title>Grade Inspector</title>
+</head>
+
+<body class="bg-gray-100 h-screen">
+
+   <div class="flex flex-col gap-4 p-8">
+
+      <div class="container mx-auto flex flex-col items-center gap-6 p-4">
+         <label for="fileInput">
+            <button onclick="document.getElementById('fileInput').click()" type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">اختر ملفات الإكسل</button>
+         </label>
+         <input type="file" id="fileInput" accept=".xlsx, .xls" multiple hidden>
+      </div>
+
+      <div class="container mx-auto">
+         <div id="errors" class="flex flex-col gap-12">
+
+         </div>
+      </div>
+   </div>
+
+
+
+
+   <script type="module" src="index.js"></script>
+</body>
+
+</html>
